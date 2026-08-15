@@ -354,8 +354,8 @@ function App() {
           <ProjectReport
             number="002"
             title="Craftsman booking marketplace"
-            status="In progress"
-            tone="pending"
+            status="Shipped"
+            tone="pass"
             summary="A PERN marketplace connecting artisans with clients for bookings — the project I'm using to learn PostgreSQL, TypeORM, and raw SQL beyond the Mongo-first stack above."
             features={[
               "React + React Router frontend",
