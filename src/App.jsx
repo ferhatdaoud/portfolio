@@ -249,9 +249,9 @@ function App() {
           >
             View projects <ArrowRight size={15} />
           </a>
-          {/* File lives at public/resume.pdf — filename below controls what the browser saves it as */}
+          {/* File lives at public/Ferhat_Daoud_CV.pdf */}
           <a
-            href="/resume.pdf"
+            href="/Ferhat_Daoud_CV.pdf"
             download="Ferhat_Daoud_CV.pdf"
             className="inline-flex items-center gap-2 px-5 py-3 text-sm font-medium border"
             style={{ borderColor: ink, color: ink }}
@@ -390,12 +390,11 @@ function App() {
                 CV / résumé
               </h4>
               <p className="text-sm" style={{ color: inkMuted }}>
-                {/* TODO: swap this line once the CV exists, e.g. "Last updated August 2026." */}
-                Coming soon — drop the finished PDF at{" "}
-                <code>/public/resume.pdf</code> and the button above goes live.
+                Full-stack developer resume — covering React, Node.js, Express,
+                and MongoDB projects.
               </p>
             </div>
-            <StampTag label="Status" status="Pending" tone="pending" />
+            <StampTag label="Status" status="Available" tone="pass" />
           </div>
         </div>
       </section>
