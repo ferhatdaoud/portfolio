@@ -394,7 +394,7 @@ function App() {
                 and MongoDB projects.
               </p>
             </div>
-            <StampTag label="Status" status="Available" tone="pass" />
+            <StampTag label="Status" status="Ready" tone="pass" />
           </div>
         </div>
       </section>
