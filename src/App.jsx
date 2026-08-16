@@ -354,8 +354,8 @@ function App() {
           <ProjectReport
             number="002"
             title="Craftsman booking marketplace"
-            status="Shipped"
-            tone="pass"
+            status="In Progress"
+            tone="pending"
             summary="A PERN marketplace connecting artisans with clients for bookings — the project I'm using to learn PostgreSQL, TypeORM, and raw SQL beyond the Mongo-first stack above."
             features={[
               "React + React Router frontend",
@@ -381,7 +381,7 @@ function App() {
           03 — Full report
         </p>
         <div className="border p-8" style={{ borderColor: paperLine }}>
-          <div className="flex flex-wrap items-center justify-between gap-4">
+          <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
             <div>
               <h4
                 className="text-xl font-bold mb-1"
@@ -395,6 +395,25 @@ function App() {
               </p>
             </div>
             <StampTag label="Status" status="Ready" tone="pass" />
+          </div>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="/Ferhat_Daoud_CV.pdf"
+              download="Ferhat_Daoud_CV.pdf"
+              className="inline-flex items-center gap-2 px-5 py-3 text-sm font-medium"
+              style={{ backgroundColor: ink, color: paper }}
+            >
+              Download CV <Download size={15} />
+            </a>
+            <a
+              href="/Ferhat_Daoud_CV.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-3 text-sm font-medium border"
+              style={{ borderColor: ink, color: ink }}
+            >
+              View in browser <ExternalLink size={15} />
+            </a>
           </div>
         </div>
       </section>
@@ -432,9 +451,10 @@ function App() {
           >
             <FaGithub size={17} /> github.com/ferhatdaoud
           </a>
-          {/* TODO: replace with your real LinkedIn URL, or delete this line if you don't have one yet */}
           <a
             href="https://www.linkedin.com/in/ferhat-daoud-721ab738a/"
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center gap-2 hover:underline"
           >
             <FaLinkedin size={17} /> LinkedIn
